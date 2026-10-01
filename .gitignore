@@ -7,3 +7,5 @@ venv/
 # El dataset completo no se versiona (ver dataset/README.md)
 dataset/ml-1m/
 *.zip
+# Salida de figuras.py
+figuras/

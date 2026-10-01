@@ -30,6 +30,7 @@ cada tipo y la densidad 2|E| / (|V|(|V| − 1)).
 
 ```
 main.py                    # CLI: recomendar, comparar con fuerza bruta, abrir GUI
+figuras.py                 # genera las Figuras 2, 3 y 4 del informe (PNG)
 src/recomendador/
   datos.py                 # carga de users.dat, movies.dat, ratings.dat
   grafo.py                 # Grafo con E_UM, E_UU y E_MM (listas de adyacencia)
@@ -51,6 +52,7 @@ python main.py --usuario 1 --k 10 --comparar
 python main.py --s 30                      # otro umbral para E_UU y E_MM
 python main.py --gui
 python -m unittest discover -s tests -v
+python figuras.py --usuario 1 --s 20      # Figuras 2, 3 y 4 del informe en figuras/
 ```
 
 Sin `dataset/ml-1m/`, el programa usa `dataset/muestra/` automáticamente.
