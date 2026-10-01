@@ -1,0 +1,5 @@
+# Núcleo: solo biblioteca estándar de Python 3.10+
+# Visualización y GUI
+matplotlib>=3.8
+networkx>=3.2
+customtkinter>=5.2

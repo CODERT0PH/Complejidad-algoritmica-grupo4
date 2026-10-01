@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
+.vscode/
+# El dataset completo no se versiona (ver dataset/README.md)
+dataset/ml-1m/
+*.zip
+# Salida de figuras.py
+figuras/
