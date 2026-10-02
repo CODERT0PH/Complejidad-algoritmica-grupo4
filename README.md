@@ -31,6 +31,7 @@ cada tipo y la densidad 2|E| / (|V|(|V| − 1)).
 ```
 main.py                    # CLI: recomendar, comparar con fuerza bruta, abrir GUI
 figuras.py                 # genera las Figuras 2, 3 y 4 del informe (PNG)
+notebooks/Figuras_TB1_Colab.ipynb  # Colab: Figura 1 (usuario–película) y Figura 2 (usuario–usuario) con ML-1M
 src/recomendador/
   datos.py                 # carga de users.dat, movies.dat, ratings.dat
   grafo.py                 # Grafo con E_UM, E_UU y E_MM (listas de adyacencia)
@@ -56,6 +57,10 @@ python figuras.py --usuario 1 --s 20      # Figuras 2, 3 y 4 del informe en figu
 ```
 
 Sin `dataset/ml-1m/`, el programa usa `dataset/muestra/` automáticamente.
+
+Para las figuras del TB1 sin instalar nada, abre `notebooks/Figuras_TB1_Colab.ipynb` en Google Colab
+(Archivo → Abrir cuaderno → GitHub) y ejecuta todas las celdas: descarga MovieLens 1M, imprime las cifras
+del grafo completo y descarga los PNG.
 
 ## Entregables
 
