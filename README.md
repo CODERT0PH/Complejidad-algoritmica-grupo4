@@ -31,6 +31,7 @@ cada tipo y la densidad 2|E| / (|V|(|V| − 1)).
 ```
 main.py                    # CLI: recomendar, comparar con fuerza bruta, abrir GUI
 figuras.py                 # genera las Figuras 2, 3 y 4 del informe (PNG)
+notebooks/Recomendador_Grupo4_Colab.ipynb  # Colab definitivo: todo el trabajo (TB1, Hito 2 y final)
 notebooks/Figuras_TB1_Colab.ipynb  # Colab: Figura 1 (usuario–película) y Figura 2 (usuario–usuario) con ML-1M
 src/recomendador/
   datos.py                 # carga de users.dat, movies.dat, ratings.dat
@@ -58,7 +59,17 @@ python figuras.py --usuario 1 --s 20      # Figuras 2, 3 y 4 del informe en figu
 
 Sin `dataset/ml-1m/`, el programa usa `dataset/muestra/` automáticamente.
 
-Para las figuras del TB1 sin instalar nada, abre `notebooks/Figuras_TB1_Colab.ipynb` en Google Colab
+## Colab definitivo
+
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CODERT0PH/Complejidad-algoritmica-grupo4/blob/main/notebooks/Recomendador_Grupo4_Colab.ipynb)
+
+`notebooks/Recomendador_Grupo4_Colab.ipynb` reúne todo el trabajo en un solo cuaderno, en el orden del informe:
+carga y exploración de MovieLens 1M, grafo bipartito, aristas usuario–usuario, figuras, BFS de 3 niveles +
+voraz Top-K, fuerza bruta, comunidades con UFDS + Kruskal, validación (pruebas, Precision@K, tiempos) y una GUI
+con ipywidgets. Ejecuta *Entorno de ejecución → Ejecutar todas*; al final descarga `resultados_grupo4.zip`
+con las figuras y las tablas para el informe.
+
+Para solo las figuras del TB1 sin instalar nada, abre `notebooks/Figuras_TB1_Colab.ipynb` en Google Colab
 (Archivo → Abrir cuaderno → GitHub) y ejecuta todas las celdas: descarga MovieLens 1M, imprime las cifras
 del grafo completo y descarga los PNG.
 
